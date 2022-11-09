@@ -38,7 +38,7 @@ class Rectangle:
     def _is_idx_on_right_edge(self, i: int) -> bool:
         return i in [1, 3]
 
-def is_within_interval(x: int, interval: int):
+def is_within_interval(x: int, interval: int, tolerance: float):
     return x >= - tolerance and x <= interval + tolerance
 
 def test_rectangle_contains_exact() -> None:
